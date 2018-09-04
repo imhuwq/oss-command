@@ -1,0 +1,13 @@
+stages:
+ - test
+
+job run_tests:
+    stage: test
+    tags:
+      - python3_unittest
+      - Lori
+    script:
+      - pip3 install -r requirements.txt --user --upgrade
+      - pytest --cov=oss_command
+    coverage: '/TOTAL.+?(\d+)%/'
+    allow_failure: false

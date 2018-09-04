@@ -1,0 +1,3 @@
+[console_scripts]
+oss_command = oss_command.entrypoint:main
+

@@ -1,0 +1,8 @@
+dist
+venv
+.idea
+build
+*.pyc
+htmlcov
+.coverage
+.pytest_cache
